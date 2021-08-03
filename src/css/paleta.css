@@ -1,0 +1,22 @@
+/* Paleta de cores padrão do site */
+
+* {
+    background-color: inherit;
+}
+
+button, select {
+    border-color: black;
+}
+
+select:focus, select:hover, a:focus, a:hover, button:focus, button:hover {
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: rgba(0,0,0,.85);
+}
+
+hr {
+    border-top-color: rgba(0,0,0,.85);
+}

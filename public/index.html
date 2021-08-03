@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Relógio acessível</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link id="paleta" rel="stylesheet" href="../src/css/paleta.css">
+    <link rel="icon" href="../src/assets/img/relogio.svg"/>
+</head>
+
+<body id="topo">
+    <div id="menuNav">
+        <img id="logo" src="../src/assets/img/relogio.svg" height="70vh" width="70vh" alt="Logo de relógio">
+        <a href="#relogio">Relógio</a>
+        <a href="#cronometro">Cronômetro</a>
+        <a href="#temporizador">Temporizador</a>
+        <a href="#" id="inc_font">Aumentar  fonte</a>
+        <a href="#" id="dec_font">Diminuir fonte</a>
+        <a href="#" id="contraste">Alto contraste</a>
+    </div>
+    <hr>
+    <div id="relogio" class="container">
+        <div class="display">
+            <h2>Relógio</h2>
+            <span id="rel">*</span>
+            <p id="data"></p>
+        </div>
+        <div class="config">
+            <button id="exibir_segundos">Exibir segundos</button>
+            <a href="#topo">Voltar ao início.</a>
+        </div>
+    </div>
+    <hr>
+    <div id="cronometro" class="container">
+        <div class="display">
+            <h2>Cronômetro</h2>
+            <span class="clock"></span>
+        </div>
+        <div class="config">
+            <button class="iniciar">Iniciar</button>
+            <button class="parar">Parar</button>
+            <button class="zerar">Zerar</button>
+            <a href="#topo">Voltar ao início.</a>
+        </div>
+    </div>
+    <hr>
+    <div id="temporizador" class="container">
+        <div class="display">
+            <h2>Temporizador</h2>
+            <div id="display">
+                <span>00:00</span>
+            </div>
+        </div>
+        <div class="config">
+            <p>Minutos:</p>
+            <select id="minutos" name="minutos"></select>
+    
+            <p>Segundos:</p>
+            <select id="segundos" name="segundos"></select>
+
+             <!--botao de iniciar-->
+            <button id="start">Iniciar</button>
+    
+            <!--display do tempo-->
+            <br><br>
+            <a href="#topo">Voltar ao início.</a>
+
+        </div>
+    </div>
+    <script src="../src/js/base.js"></script>
+    <script src="../src/js/relogio.js"></script>
+    <script src="../src/js/cronometro.js"></script>
+    <script src="../src/js/temporizador.js"></script>
+    <script src="../src/js/fonte.js"></script>
+    <script src="../src/js/contraste.js"></script>
+</body>
+</html>

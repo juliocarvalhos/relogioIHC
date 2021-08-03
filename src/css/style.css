@@ -1,0 +1,125 @@
+/* Base de estilo do site */
+
+*{
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button, select {
+    border-style: solid;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+select:focus, select:hover, a:focus, a:hover, button:focus, button:hover {
+    outline: none;
+    border-radius: 12px;
+}
+
+select, a, button {
+    padding: 1%;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 30px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* barra de navegação */
+
+#menuNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+}
+
+#menuNav #logo {
+    margin: 0 2% 0 2%;
+}
+
+#menuNav a{
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+/* Display números */
+@font-face {
+     font-family: digital;
+     src: url("../assets/fonts/digital-7.ttf") format("truetype");
+     font-display: swap;
+}
+
+.display {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display span {
+    line-height: 7rem;
+    font-size: 7rem;
+    font-family: digital, Arial;
+}
+
+.display p {
+    font-size: 1.1rem;
+}
+
+.display h2 {
+    font-size: 2.2rem;
+}
+
+
+/* Configurações */
+.config {
+    height: 30%;
+    width: 100%;
+    /* padding-top: 5%; */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+}
+
+hr {
+    width: 98%;
+    height: 0;
+    border: 0;
+    border-top: solid 10px;
+    border-style: dashed;
+}
+
+/* Elementos ocultos visualmente mas acessíveis pelo leitor de tela  */
+.voz {
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
